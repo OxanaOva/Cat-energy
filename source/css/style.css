@@ -372,6 +372,12 @@ template {
   line-height: 1;
 }
 
+@media (min-width: 768px) {
+  .card {
+    background-color: #f2f2f2;
+  }
+}
+
 .card__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -386,7 +392,18 @@ template {
 }
 
 .catalog-additional {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.catalog-additional__container {
+  display: grid;
+}
+@media (min-width: 1300px) {
+  .catalog-additional__container {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
 }
 
 .catalog-additional__heading {
@@ -395,13 +412,39 @@ template {
   font-weight: 400;
   line-height: 24px;
 }
+@media (min-width: 1300px) {
+  .catalog-additional__heading {
+    grid-column: 1/-1;
+  }
+}
 
 .catalog-additional__list {
   list-style: none;
 }
+@media (min-width: 1300px) {
+  .catalog-additional__list {
+    grid-column: 1/-2;
+  }
+}
 
 .catalog-list {
-  padding: 20px;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .catalog-list__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .catalog-list__container {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+    row-gap: 64px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -540,6 +583,29 @@ template {
   list-style: none;
 }
 
+@media (min-width: 1300px) {
+  .field-group__list--contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .field-group__list--additional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+@media (min-width: 1300px) {
+  .field-group__list--additional {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .field {
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
@@ -560,8 +626,31 @@ template {
   padding: 20px;
 }
 
+@media (min-width: 1300px) {
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
+
 .form__group {
   margin: 0;
+}
+
+@media (min-width: 1300px) {
+  .form__group--contacts,
+.form__group--comment,
+.form__group--additional {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .form__footer {
+    grid-column: 1/-1;
+  }
 }
 
 @media (max-width: 767px) {
