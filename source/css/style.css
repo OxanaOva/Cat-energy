@@ -863,7 +863,7 @@ img {
   left: 7px;
   width: 36px;
   height: 50px;
-  background-image: url("../img/icons/cat-slim.svg");
+  background-image: url("/source/img/cat-slim.svg");
 }
 @media (min-width: 768px) {
   .catalog-sections__heading--slim::after {
@@ -888,7 +888,7 @@ img {
   left: -10px;
   width: 67px;
   height: 28px;
-  background-image: url("../img/icons/cat-pro.svg");
+  background-image: url("/source/img/cat-pro.svg");
 }
 @media (min-width: 768px) {
   .catalog-sections__heading--pro::after {
@@ -952,7 +952,7 @@ img {
   height: 10px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-image: url("../img/icons/arrow.svg");
+  background-image: url("/source/img/icon/arrow.svg");
 }
 .catalog-sections__link:hover::after {
   width: 32px;
@@ -1158,7 +1158,7 @@ img {
 .control--checkbox .control__input:checked + .control__lead::after {
   background-repeat: no-repeat;
   background-position: calc(50% + 1px) 50%;
-  background-image: url("../img/icons/check.svg");
+  background-image: url("/source/img/icon/check.svg");
 }
 @media (min-width: 768px) {
   .control--checkbox .control__input:checked + .control__lead::after {
@@ -1890,7 +1890,7 @@ img {
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("../img/icons/burger.svg");
+  background-image: url("/source/img/icon/burger.svg");
   border: none;
 }
 @media (max-width: 767px) {
@@ -1899,7 +1899,7 @@ img {
   }
   .page-header__nav--opened .page-header__toggler {
     display: block;
-    background-image: url("../img/icons/close.svg");
+    background-image: url("/source/img/icon/close.svg");
   }
 }
 @media (min-width: 768px) {
@@ -2043,19 +2043,19 @@ img {
 }
 
 .process__item--leaf::before {
-  background-image: url("../img/icons/leaf.svg");
+  background-image: url("/source/img/icon/leaf.svg");
 }
 
 .process__item--powder::before {
-  background-image: url("../img/icons/powder.svg");
+  background-image: url("/source/img/icon/tub.svg");
 }
 
 .process__item--meal::before {
-  background-image: url("../img/icons/meal.svg");
+  background-image: url("/source/img/icon/eat.svg");
 }
 
 .process__item--weight::before {
-  background-image: url("../img/icons/weight.svg");
+  background-image: url("/source/img/icon/alarm.svg");
 }
 
 .promo {
@@ -2068,7 +2068,7 @@ img {
     background-color: #63a63b;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("../img/background/promo-small.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-image: url("/source/img/background/promo-small.jpg"), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   }
 }
 @media (min-width: 768px) {
@@ -2093,7 +2093,7 @@ img {
     background-color: #63a63b;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    background-image: url("../img/background/promo-large.jpg");
+    background-image: url("/source/img/background/promo-large.jpg");
   }
 }
 
